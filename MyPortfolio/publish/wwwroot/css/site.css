@@ -1,0 +1,240 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: #FCD34D;
+    }
+}
+
+.animated-text {
+    overflow: hidden;
+    border-right: .15em solid #FCD34D;
+    white-space: nowrap;
+    display: inline-block;
+    animation: typing 3.5s steps(40, end) 1s forwards, blink-caret .75s step-end infinite;
+}
+
+.card-interactive {
+    transition: all 0.4s ease;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
+
+.delay-900 {
+    animation-delay: 0.9s;
+}
+/*--------About section--------------*/
+.hidden-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* ===== Skills Page Animations ===== */
+
+.interactive-card {
+    transition: all 0.5s ease-in-out;
+}
+
+.hidden-scroll {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible-scroll {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* ===== Skill Card Hover Slide Effect ===== */
+
+.skill-content-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.skill-default-view {
+    transition: transform 0.4s ease-in-out;
+}
+
+.skill-details-view {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    color: white;
+    transition: transform 0.4s ease-in-out;
+}
+
+.group:hover .skill-default-view {
+    transform: translateY(-100%);
+}
+
+.group:hover .skill-details-view {
+    transform: translateY(-100%);
+}
+/* Resume csss */
+
+/* Scroll Reveal Animation */
+.hidden-scroll {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible-scroll {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* PDF Viewer Container */
+.pdf-viewer-container {
+    width: 100%;
+    height: 80vh;
+    min-height: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Button Styling */
+.download-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #10B981; /* Emerald */
+    color: white;
+    font-weight: bold;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+    .download-btn:hover {
+        background-color: #059669;
+        transform: scale(1.05);
+    }
+
+/* Print Optimization */
+@media print {
+    body {
+        background: white;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .pdf-viewer-container {
+        box-shadow: none;
+        height: auto;
+        min-height: auto;
+    }
+}
+/*Contact Styling */
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Overlay for readability */
+.map-overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    z-index: 0;
+}
+
+/* Hidden-scroll animations */
+.hidden-scroll {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible-scroll {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* Form styles */
+.input-field {
+    margin-top: 0.25rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: white;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #2563eb;
+    transform: scale(1.01);
+}
