@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<header id="home"
+        class="min-h-screen flex items-center justify-center text-center text-white relative">
+
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-800"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+        <h1 class="text-6xl lg:text-8xl font-black mb-6 tracking-tight opacity-0 animate-fadeInUp">
+            Hello, I'm <span class="text-yellow-300">Jyoti Ranjan Behera</span>
+        </h1>
+
+        <p class="text-2xl lg:text-3xl font-light mb-12">
+            A creative
+            <span class="animated-text text-yellow-300 text-3xl font-mono">
+                Full stack developer
+            </span>
+            building modern web applications.
+        </p>
+
+        <a href="/Skills"
+           class="inline-block py-4 px-10 bg-emerald-500 text-white text-xl font-bold rounded-full shadow-lg
+                  hover:bg-emerald-600 transform hover:scale-105 transition
+                  ring-4 ring-emerald-300 hover:ring-emerald-400
+                  opacity-0 animate-fadeInUp delay-700">
+            See My Skills →
+        </a>
+    </div>
+</header>
+
+<section id="skills" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-16 opacity-0 animate-fadeInUp delay-300">
+            My Core Expertise
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div class="group bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl
+                        card-interactive hover:-translate-y-2
+                        opacity-0 animate-fadeInUp delay-500">
+                <div class="text-5xl mb-4 text-blue-500">🚀</div>
+                <h3 class="text-2xl font-semibold mb-3 card-interactive-text">
+                    Frontend Development
+                </h3>
+                <p class="text-gray-600">
+                    HTML, CSS, Tailwind, JavaScript, React
+                </p>
+            </div>
+
+            <div class="group bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl
+                        card-interactive hover:-translate-y-2
+                        opacity-0 animate-fadeInUp delay-700">
+                <div class="text-5xl mb-4 text-indigo-500">⚙️</div>
+                <h3 class="text-2xl font-semibold mb-3 card-interactive-text">
+                    Backend Engineering
+                </h3>
+                <p class="text-gray-600">
+                    ASP.NET Core, Web APIs, SQL Server
+                </p>
+            </div>
+
+            <div class="group bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl
+                        card-interactive hover:-translate-y-2
+                        opacity-0 animate-fadeInUp delay-900">
+                <div class="text-5xl mb-4 text-emerald-500">☁️</div>
+                <h3 class="text-2xl font-semibold mb-3 card-interactive-text">
+                    Cloud & DevOps
+                </h3>
+                <p class="text-gray-600">
+                    Docker, CI/CD, Deployment
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>

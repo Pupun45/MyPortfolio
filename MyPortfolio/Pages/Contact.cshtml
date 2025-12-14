@@ -1,0 +1,69 @@
+﻿@page
+@model MyPortfolio.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section class="map-background min-h-screen flex items-center justify-center ">
+    <div class="map-overlay w-full">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 hidden-scroll" data-delay="0.2">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white mb-12">
+                <div class="p-4 bg-gray-800/70 rounded-lg hidden-scroll hover:bg-gray-700 transition duration-300" data-delay="0.4">
+                    <a href="tel:+919040682566" class="block">
+                        <div class="text-3xl text-blue-400 mb-2">📞</div>
+                        <p class="font-semibold">Call Me</p>
+                        <p class="text-sm text-gray-400 hover:text-white transition duration-300">[+91 90406 82566]</p>
+                        <p class="text-xs text-blue-300 mt-1">(Click to call on mobile)</p>
+                    </a>
+                </div>
+
+                <div class="p-4 bg-gray-800/70 rounded-lg hidden-scroll" data-delay="0.6">
+                    <div class="text-3xl text-blue-400 mb-2">📧</div>
+                    <p class="font-semibold">Email</p>
+                    <p class="text-sm text-gray-400 mb-3">jyotiranjanbehera282@gmail.com.com</p>
+                    <a id="gmailDirectLink" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank" class="inline-block px-3 py-1 text-sm font-medium bg-red-600 text-white rounded-full hover:bg-red-700 transition duration-300">Open in Gmail</a>
+                    <p class="text-xs text-blue-300 mt-2">or standard mail client</p>
+                </div>
+
+                <div class="p-4 bg-gray-800/70 rounded-lg hidden-scroll" data-delay="0.8">
+                    <div class="text-3xl text-blue-400 mb-2">📍</div>
+                    <p class="font-semibold">Location</p>
+                    <p class="text-sm text-gray-400">[Patrapada,Bhubaneswara]</p>
+                    <p class="text-xs text-blue-300 mt-1">(Open to remote work)</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl hidden-scroll" data-delay="1.0">
+                <header class="mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Send Me a Quick Message</h2>
+                    <p class="text-sm text-gray-500">Your message will open in your default email application.</p>
+                </header>
+
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" required class="input-field">
+                        </div>
+                        <div>
+                            <label for="senderEmail" class="block text-sm font-medium text-gray-700">Your Email Address</label>
+                            <input type="email" id="senderEmail" required class="input-field">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                        <input type="text" id="subject" required class="input-field">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" rows="5" required class="input-field"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit-btn">Send Message (Opens Mail App)</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,93 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<!-- ABOUT SECTION -->
+<section class="py-20 sm:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+
+            <!-- Profile Image -->
+            <div class="md:col-span-1 flex justify-center relative hidden-scroll" data-delay="0.2">
+                <img id="profile-img"
+                     src="~/lib/photo.jpg"
+                     alt="Profile Photo"
+                     class="w-64 h-64 object-cover rounded-full shadow-2xl border-4 border-blue-500
+                            transform hover:scale-105 transition duration-500 cursor-pointer"
+                     onerror="this.onerror=null;this.src='https://via.placeholder.com/256x256?text=Your+Photo'">
+
+                <!-- Tech Stack Popup -->
+                <div id="tech-stack-popup"
+                     class="absolute top-1/2 left-full ml-4 p-3 bg-emerald-500 text-white text-sm
+                            font-semibold rounded-lg shadow-xl opacity-0 transform translate-x-4
+                            transition duration-300 pointer-events-none z-10 w-44 text-left">
+                    <p class="font-bold border-b border-emerald-300 mb-1">Current Stack</p>
+                    <ul class="list-disc list-inside ml-2">
+                        <li>.NET Core</li>
+                        <li>C#</li>
+                        <li>SQL Server</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="md:col-span-2 text-lg hidden-scroll" data-delay="0.4">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6 border-b-2 border-emerald-500 pb-2">
+                    Jyoti Ranjan Behera
+                </h2>
+
+                <p class="mb-4 text-gray-700">
+                    Hello! I am an <strong>MCA graduate</strong> and a <strong>Software Developer</strong>
+                    passionate about building clean, scalable, and user-friendly applications.
+                </p>
+
+                <p class="mb-4 text-gray-700">
+                    I work mainly with <strong>.NET Core, C#, SQL Server</strong>, and modern web technologies.
+                </p>
+
+                <p class="text-blue-600 font-semibold italic">
+                    "Good software is built with clarity, consistency, and care."
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-12 hidden-scroll" data-delay="0.2">
+            Background & Skills
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl
+                        transition duration-300 hidden-scroll" data-delay="0.4">
+                <h3 class="text-2xl font-bold text-blue-600 mb-2">
+                    Software Developer
+                </h3>
+                <p class="text-gray-600 mb-3">
+                    Experience in building Web APIs, Razor Pages, dashboards.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl
+                        transition duration-300 hidden-scroll" data-delay="0.6">
+                <h3 class="text-2xl font-bold text-indigo-600 mb-2">
+                    Education
+                </h3>
+                <p class="text-gray-600 mb-3">
+                    Master of Computer Applications (MCA).
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>

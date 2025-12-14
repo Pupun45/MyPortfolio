@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPortfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    <!-- Custom JS -->
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 w-full bg-white shadow z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a asp-page="/Index" class="text-2xl font-bold text-indigo-600">MyPortfolio</a>
+            <ul class="flex space-x-8 text-lg font-medium">
+                <li><a asp-page="/Index" class="hover:text-indigo-600 transition">Home</a></li>
+                <li><a asp-page="/About" class="hover:text-indigo-600 transition">About</a></li>
+                <li><a asp-page="/Skills" class="hover:text-indigo-600 transition">Skills</a></li>
+                <li><a asp-page="/Contact" class="hover:text-indigo-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <p class="text-gray-400">&copy; 2025 Jyoti Ranjan Behera. All Rights Reserved.</p>
+        <p class="text-sm">Built with <span class="text-blue-400">Tailwind CSS</span>.</p>
+    </footer>
+
+</body>
+</html>
